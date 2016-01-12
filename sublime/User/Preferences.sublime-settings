@@ -13,6 +13,7 @@
 	"font_size": 12,
 	"ignored_packages":
 	[
+		"Git"
 	],
 	"indent_guide_options":
 	[

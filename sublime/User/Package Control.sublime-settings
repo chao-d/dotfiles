@@ -7,7 +7,6 @@
 	[
 		"AdvancedNewFile",
 		"All Autocomplete",
-		"ATS Syntax Highlight",
 		"ConvertToUTF8",
 		"Git",
 		"GitGutter",
@@ -20,7 +19,6 @@
 		"Subclim",
 		"SublimeLinter",
 		"Terminal",
-		"Theme - Soda",
 		"Tomorrow Color Schemes",
 		"Vintage Numbers",
 		"VintageLines"
