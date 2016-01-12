@@ -4,8 +4,8 @@
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
     ~/.sublime: sublime/
-    ~/.tmux.conf: tmux.conf
     ~/.tmux: tmux/
+    ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.fonts: fonts/

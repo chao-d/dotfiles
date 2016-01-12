@@ -26,6 +26,7 @@ alias bu='cd ~/Documents/BU'
 alias ws='cd ~/Documents/misc./Workspace'
 alias epi='cd /home/chao/Dropbox/Documents/Job/CodeInterview/EPI'
 alias episol='cd /home/chao/Dropbox/Documents/Job/CodeInterview/EPI/sol/java/src/main/java/com/epi'
+alias dot='cd ~/Dropbox/Documents/dotfiles'
 
 export TLDR_COLOR_BLANK="blue"
 export TLDR_COLOR_NAME="cyan"
