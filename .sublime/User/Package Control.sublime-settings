@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"ATS Syntax Highlight",
+		"ConvertToUTF8",
+		"Git",
+		"GitGutter",
+		"Gruvbox Dark",
+		"LaTeX Snippets",
+		"LaTeXTools",
+		"Package Control",
+		"Predawn",
+		"SideBarEnhancements",
+		"Subclim",
+		"SublimeLinter",
+		"Terminal",
+		"Theme - Soda",
+		"Tomorrow Color Schemes",
+		"Vintage Numbers",
+		"VintageLines"
+	]
+}
