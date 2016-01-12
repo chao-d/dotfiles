@@ -7,7 +7,7 @@
 		"trie"
 	],
 	"auto_complete_cycle": true,
-	"color_scheme": "Packages/User/SublimeLinter/gruvbox (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/predawn (SL).tmTheme",
 	"detect_indentation": false,
 	"font_face": "Source Code Pro",
 	"font_size": 12,
