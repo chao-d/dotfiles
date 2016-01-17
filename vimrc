@@ -31,19 +31,18 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'mattn/emmet-vim'
-Plugin 'pangloss/vim-javascript'
 Plugin 'gcmt/taboo.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'gregsexton/VimCalc'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
-Plugin 'jimenezrick/vimerl'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
+Plugin 'mattn/emmet-vim'
+" Plugin 'pangloss/vim-javascript'
 
 
 call vundle#end()
@@ -290,21 +289,21 @@ autocmd FileType java setlocal completeopt-=preview
 
 "vim-javascript settings
 "Enables HTML/CSS syntax highlighting in your JavaScript file.
-let g:javascript_enable_domhtmlcss = 1
+" let g:javascript_enable_domhtmlcss = 1
 "enables javascript code folding
-let b:javascript_fold = 1
+" let b:javascript_fold = 1
 "disables JSDoc syntax highlighting
-let g:javascript_ignore_javaScriptdoc = 0
+" let g:javascript_ignore_javaScriptdoc = 0
 "customize concealing characters by defining the following variables:
-let g:javascript_conceal_function   = "ƒ"
-let g:javascript_conceal_null       = "ø"
-let g:javascript_conceal_this       = "@"
-let g:javascript_conceal_return     = "⇚"
-let g:javascript_conceal_undefined  = "¿"
-let g:javascript_conceal_NaN        = "ℕ"
-let g:javascript_conceal_prototype  = "¶"
-let g:javascript_conceal_static     = "•"
-let g:javascript_conceal_super      = "Ω"
+" let g:javascript_conceal_function   = "ƒ"
+" let g:javascript_conceal_null       = "ø"
+" let g:javascript_conceal_this       = "@"
+" let g:javascript_conceal_return     = "⇚"
+" let g:javascript_conceal_undefined  = "¿"
+" let g:javascript_conceal_NaN        = "ℕ"
+" let g:javascript_conceal_prototype  = "¶"
+" let g:javascript_conceal_static     = "•"
+" let g:javascript_conceal_super      = "Ω"
 
 
 "emmet settings
@@ -329,3 +328,4 @@ let g:airline_right_sep = '◀'
 
 "enable fenced code block syntax highlighting in your markdown documents
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+

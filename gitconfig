@@ -18,7 +18,7 @@
 	branch = auto
 	interactive = auto
 	grep = auto
-    
+
 [diff]
     tool = kdiff3
 
@@ -27,5 +27,6 @@
 
 [core]
 	editor = vimx
+
 [credential]
 	helper = cache --timeout=99999999999
