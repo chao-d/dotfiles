@@ -1,0 +1,9 @@
+pane	0	0	:chao@X:~/Dropbox/Documents/dotfiles	1	:*	0	:/home/chao/Dropbox/Documents/dotfiles	1	bash	:
+pane	0	1	:chao@X:~/Dropbox/Documents/Job/CodeInterview/EPI/sol/java/src/main/java/com/epi	0	:-	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/EPI/sol/java/src/main/java/com/epi	1	bash	:
+pane	0	2	:chao@X:~/Dropbox/Documents/Job/CodeInterview/EPI/chapter7	0	: 	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/EPI/chapter7	1	bash	:
+pane	0	3	:chao@X:~/Documents/Job/CodeInterview/Leetcode	0	: 	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/Leetcode	1	bash	:
+window	0	0	1	:*	c8dd,85x29,0,0,0
+window	0	1	0	:-	c8de,85x29,0,0,1
+window	0	2	0	: 	c8df,85x29,0,0,2
+window	0	3	0	: 	b3c0,158x41,0,0,3
+state	0	
