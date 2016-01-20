@@ -77,7 +77,7 @@ vmap <C-x> "+x
 
 "appearance configurations
 set background=dark
-colorscheme lucius
+colorscheme jellybeans
 set t_Co=256            "use 256 colors in terminal
 " set guifont=DejaVu\ Sans\ Mono\ 12
 set guifont=Source\ Code\ Pro\ 12

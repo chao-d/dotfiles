@@ -1,0 +1,19 @@
+pane	0	0	:chao@X:~/Documents/Job/CodeInterview/Leetcode/Java0/0118	1	:*	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/Leetcode/Java0/0118	1	bash	:
+pane	0	1	:chao@X:~/Documents/Job/CodeInterview/Leetcode/Java0/0118	0	: 	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/Leetcode/Java0/0118	1	vimx	:vimx LongestSubstringWithoutRepeatingChars.java
+pane	0	2	:chao@X:~/Dropbox/Documents/Job/CodeInterview/EPI/chapter7	0	: 	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/EPI/chapter7	1	bash	:
+pane	0	3	:chao@X:~/Documents/Books/misc	0	:-	0	:/home/chao/Dropbox/Documents/Books/misc	1	bash	:
+pane	1	0	:chao@X:~/Documents/Job/CodeInterview/Leetcode	0	:-	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/Leetcode	1	bash	:
+pane	1	1	:chao@X:~/Dropbox/Documents/Job/CodeInterview/Leetcode/Java0	0	: 	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/Leetcode/Java0	1	bash	:
+pane	1	2	:epi	0	: 	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/EPI	1	bash	:
+pane	1	3	:leetcode	0	: 	0	:/home/chao/Dropbox/Documents/Job/CodeInterview/Leetcode	1	bash	:
+pane	1	4	:chao@X:~/Documents/Job/resume/new	1	:*	0	:/home/chao/Dropbox/Documents/Job/resume/new	1	bash	:okular resume.pdf
+window	0	0	1	:*	c8de,85x29,0,0,1
+window	0	1	0	: 	c8df,85x29,0,0,2
+window	0	2	0	: 	c8e0,85x29,0,0,3
+window	0	3	0	:-	c8e1,85x29,0,0,4
+window	1	0	0	:-	b3c2,158x41,0,0,5
+window	1	1	0	: 	b3c3,158x41,0,0,6
+window	1	2	0	: 	b3c4,158x41,0,0,7
+window	1	3	0	: 	b3c5,158x41,0,0,8
+window	1	4	1	:*	b3c6,158x41,0,0,9
+state	1	
