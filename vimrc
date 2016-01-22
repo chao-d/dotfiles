@@ -276,7 +276,7 @@ let g:jedi#usages_command = "<leader>s"
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 1
 let g:jedi#show_call_signatures = 0
-" let g:jedi#squelch_py_warning = 1
+let g:jedi#squelch_py_warning = 1
 autocmd FileType python setlocal completeopt-=preview
 
 
