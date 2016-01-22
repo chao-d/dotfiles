@@ -92,6 +92,8 @@ set cc=80
 set noswapfile
 set nobackup
 
+cd %:p:h
+set noautochdir
 
 "load ftplugins and indent files
 filetype plugin indent on
@@ -232,6 +234,7 @@ let g:ctrlp_custom_ignore = {
 
 
 "You Complete Me
+" let g:loaded_youcompleteme = 1
 let g:jedi#completions_enabled = 0
 let g:ycm_complete_in_comments = 1
 let g:ycm_min_num_of_chars_for_completion = 2
@@ -273,6 +276,7 @@ let g:jedi#usages_command = "<leader>s"
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 1
 let g:jedi#show_call_signatures = 0
+" let g:jedi#squelch_py_warning = 1
 autocmd FileType python setlocal completeopt-=preview
 
 

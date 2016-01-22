@@ -1,3 +1,4 @@
-vim/bundle
-tmux/plugins
+vim/bundle/*
+tmux/plugins/*
+tmux/resurrect/*
 sublime/User/Package\ Control.*
