@@ -1,4 +1,6 @@
+.gitignore
 vim/bundle/*
 tmux/plugins/*
 tmux/resurrect/*
+sublime/User/encoding_cache.json
 sublime/User/Package\ Control.*
