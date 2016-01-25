@@ -11,6 +11,7 @@ fi
 # User specific aliases and functions
 
 export PATH=/usr/local/bin:$PATH
+eval $(thefuck --alias fuck)
 
 alias vim=vimx
 alias vi=vimx
