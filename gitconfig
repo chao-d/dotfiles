@@ -1,23 +1,23 @@
 [user]
-	name = muteness
-	email = chao0duan@gmail.com
+    name = muteness
+    email = chao0duan@gmail.com
 
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	summary = log --abbrev-commit --pretty=oneline --author="muteness" --since=last.mon --reverse
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    summary = log --abbrev-commit --pretty=oneline --author="muteness" --since=last.mon --reverse
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
 
 
 [color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
-	grep = auto
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    grep = auto
 
 [diff]
     tool = kdiff3
@@ -26,7 +26,7 @@
     tool = kdiff3
 
 [core]
-	editor = vimx
+    editor = vimx
 
 [credential]
-	helper = cache --timeout=99999999999
+    helper = cache --timeout=99999999999
