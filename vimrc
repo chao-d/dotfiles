@@ -169,8 +169,8 @@ let g:Tex_UseMakefile = 0
 
 
 "double rainbow aha
-let g:rainbow_active = 0
-nnoremap <Leader>` :RainbowToggle<CR>
+let g:rainbow_active = 1
+nnoremap <Leader>~ :RainbowToggle<CR>
 let g:rainbow_conf = {
     \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
     \   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
