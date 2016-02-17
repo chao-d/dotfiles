@@ -10,12 +10,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'jonathanfilip/vim-lucius'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'morhetz/gruvbox'
 Plugin 'chriskempson/base16-vim'
-
 
 Plugin 'luochen1990/rainbow'
 Plugin 'davidhalter/jedi-vim'
@@ -44,8 +42,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
-Plugin 'mattn/emmet-vim'
 Plugin 'KabbAmine/zeavim.vim'
+" Plugin 'mattn/emmet-vim'
 " Plugin 'pangloss/vim-javascript'
 
 
