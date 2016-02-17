@@ -14,6 +14,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'morhetz/gruvbox'
+Plugin 'chriskempson/base16-vim'
+
 
 Plugin 'luochen1990/rainbow'
 Plugin 'davidhalter/jedi-vim'
@@ -76,10 +78,10 @@ vmap <C-x> "+x
 "END OF MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 "appearance configurations
+let base16colorspace=256
 set background=dark
-colorscheme lucius
+colorscheme base16-ashes
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 " set guifont=DejaVu\ Sans\ Mono\ 12
