@@ -43,6 +43,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
 Plugin 'mattn/emmet-vim'
+Plugin 'KabbAmine/zeavim.vim'
 " Plugin 'pangloss/vim-javascript'
 
 
@@ -78,8 +79,9 @@ vmap <C-x> "+x
 
 "appearance configurations
 set background=dark
-colorscheme jellybeans
+colorscheme lucius
 set t_Co=256            "use 256 colors in terminal
+set t_ut=
 " set guifont=DejaVu\ Sans\ Mono\ 12
 set guifont=Source\ Code\ Pro\ 12
 " set guifont=Cousine\ 11
@@ -334,3 +336,5 @@ let g:airline_right_sep = '◀'
 "enable fenced code block syntax highlighting in your markdown documents
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 
+"zeal location
+let g:zv_zeal_executable = '/usr/bin/zeal'
