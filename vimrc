@@ -78,7 +78,7 @@ vmap <C-x> "+x
 
 "appearance configurations
 set background=dark
-colorscheme base16-ocean
+colorscheme base16-ashes
 let base16colorspace=256
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
@@ -172,7 +172,7 @@ let g:Tex_UseMakefile = 0
 
 
 "double rainbow aha
-let g:rainbow_active = 1
+let g:rainbow_active = 0
 nnoremap <Leader>~ :RainbowToggle<CR>
 let g:rainbow_conf = {
     \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
