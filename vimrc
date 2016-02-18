@@ -77,9 +77,9 @@ vmap <C-x> "+x
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "appearance configurations
-let base16colorspace=256
 set background=dark
-colorscheme base16-ashes
+colorscheme base16-ocean
+let base16colorspace=256
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 " set guifont=DejaVu\ Sans\ Mono\ 12
