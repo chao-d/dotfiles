@@ -1,7 +1,7 @@
 # .bashrc
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.base16-shell/base16-ashes.dark.sh"
+BASE16_SHELL="$HOME/.base16-shell/base16-flat.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Source global definitions
