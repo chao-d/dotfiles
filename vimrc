@@ -257,6 +257,8 @@ let g:UltiSnipsEditSplit="vertical"
 "vim-commentary
 "gcc
 autocmd FileType python set commentstring=#\ %s
+autocmd FileType c set commentstring=//\ %s
+autocmd FileType cpp set commentstring=//\ %s
 
 
 "Bufexplorer
