@@ -237,12 +237,14 @@ let g:ctrlp_custom_ignore = {
 
 
 "You Complete Me
-" let g:loaded_youcompleteme = 1
+" let g:loaded_youcompleteme = 0
 let g:jedi#completions_enabled = 0
 let g:ycm_complete_in_comments = 1
 let g:ycm_min_num_of_chars_for_completion = 2
 let g:ycm_complete_in_strings = 1
 let g:ycm_show_diagnostics_ui = 0
+
+let g:neocomplcache_enable_at_startup = 0
 
 
 "Ultisnips
