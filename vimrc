@@ -25,7 +25,6 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'majutsushi/tagbar'
-Plugin 'vim-latex/vim-latex'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/syntastic'
@@ -42,9 +41,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
-Plugin 'KabbAmine/zeavim.vim'
-" Plugin 'mattn/emmet-vim'
-" Plugin 'pangloss/vim-javascript'
+Plugin 'mattn/emmet-vim'
+Plugin 'pangloss/vim-javascript'
 
 
 call vundle#end()
@@ -78,7 +76,8 @@ vmap <C-x> "+x
 
 "appearance configurations
 set background=dark
-colorscheme base16-ocean
+" colorscheme base16-ocean
+colorscheme lucius
 let base16colorspace=256
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
@@ -287,15 +286,15 @@ let g:jedi#squelch_py_warning = 1
 autocmd FileType python setlocal completeopt-=preview
 
 
-"Eclim settings
-"Eclim with YouCompleteMe
-let g:EclimCompletionMethod = 'omnifunc'
-"Eclim java settings
-autocmd FileType java nnoremap <silent> <buffer> <Leader>i :JavaImport<cr>
-autocmd FileType java nnoremap <silent> <buffer> <Leader>d :JavaDocSearch -x declarations<cr>
-autocmd FileType java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
-autocmd FileType java nnoremap <silent> <buffer> K :JavaDocPreview<cr>
-autocmd FileType java setlocal completeopt-=preview
+" "Eclim settings
+" "Eclim with YouCompleteMe
+" let g:EclimCompletionMethod = 'omnifunc'
+" "Eclim java settings
+" autocmd FileType java nnoremap <silent> <buffer> <Leader>i :JavaImport<cr>
+" autocmd FileType java nnoremap <silent> <buffer> <Leader>d :JavaDocSearch -x declarations<cr>
+" autocmd FileType java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+" autocmd FileType java nnoremap <silent> <buffer> K :JavaDocPreview<cr>
+" autocmd FileType java setlocal completeopt-=preview
 
 
 "vim-javascript settings
@@ -317,11 +316,11 @@ autocmd FileType java setlocal completeopt-=preview
 " let g:javascript_conceal_super      = "Ω"
 
 
-"emmet settings
-let g:user_emmet_mode='n'    "only enable normal mode functions.
-" let g:user_emmet_mode='a'    "enable all function in all mode.
-let g:user_emmet_install_global=0
-autocmd FileType html,css EmmetInstall
+" "emmet settings
+" let g:user_emmet_mode='n'    "only enable normal mode functions.
+" " let g:user_emmet_mode='a'    "enable all function in all mode.
+" let g:user_emmet_install_global=0
+" autocmd FileType html,css EmmetInstall
 
 
 "nerd tree
