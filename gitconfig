@@ -1,5 +1,5 @@
 [user]
-    name = muteness
+    name = Chao DUan
     email = chao0duan@gmail.com
 
 [alias]
@@ -26,7 +26,7 @@
     tool = kdiff3
 
 [core]
-    editor = vimx
+    editor = vim
 
 [credential]
     helper = cache --timeout=99999999999
