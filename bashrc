@@ -1,9 +1,5 @@
 # .bashrc
 
-# Base16 Shell
-BASE16_SHELL="$HOME/.base16-shell/base16-ocean.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -16,9 +12,6 @@ fi
 
 export PATH=/usr/local/bin:$PATH
 eval $(thefuck --alias fuck)
-
-# alias vim=vimx
-# alias vi=vimx
 
 alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'

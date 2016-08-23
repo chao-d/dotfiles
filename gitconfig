@@ -1,6 +1,6 @@
 [user]
-    name = muteness
-    email = chao0duan@gmail.com
+    name = Chao Duan
+    email = cduan@wayfair.com
 
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -20,10 +20,10 @@
     grep = auto
 
 [diff]
-    tool = kdiff3
+    tool = vimdiff
 
 [merge]
-    tool = kdiff3
+    tool = vimdiff
 
 [core]
     editor = vim
