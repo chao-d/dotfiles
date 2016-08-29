@@ -13,7 +13,6 @@ Plugin 'jonathanfilip/vim-lucius'
 Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'morhetz/gruvbox'
-Plugin 'chriskempson/base16-vim'
 
 Plugin 'luochen1990/rainbow'
 Plugin 'davidhalter/jedi-vim'
@@ -41,8 +40,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
-Plugin 'mattn/emmet-vim'
-Plugin 'pangloss/vim-javascript'
+Plugin 'b4winckler/vim-objc'
+Plugin 'eraserhd/vim-ios.git'
 
 
 call vundle#end()
@@ -76,13 +75,12 @@ vmap <C-x> "+x
 
 "appearance configurations
 set background=dark
-" colorscheme base16-ocean
 colorscheme lucius
 let base16colorspace=256
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 " set guifont=DejaVu\ Sans\ Mono\ 12
-set guifont=Source\ Code\ Pro\ 12
+" set guifont=Source\ Code\ Pro\ 12
 " set guifont=Cousine\ 11
 set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
@@ -162,12 +160,6 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic white
 "taboo settings
 set sessionoptions+=tabpages,globals
 let g:taboo_tab_format="%N %f"
-
-"vim-latex settings
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
-let g:Tex_DefaultTargetFormat ='pdf'
-let g:Tex_UseMakefile = 0
 
 
 "double rainbow aha
@@ -286,43 +278,6 @@ let g:jedi#squelch_py_warning = 1
 autocmd FileType python setlocal completeopt-=preview
 
 
-" "Eclim settings
-" "Eclim with YouCompleteMe
-" let g:EclimCompletionMethod = 'omnifunc'
-" "Eclim java settings
-" autocmd FileType java nnoremap <silent> <buffer> <Leader>i :JavaImport<cr>
-" autocmd FileType java nnoremap <silent> <buffer> <Leader>d :JavaDocSearch -x declarations<cr>
-" autocmd FileType java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
-" autocmd FileType java nnoremap <silent> <buffer> K :JavaDocPreview<cr>
-" autocmd FileType java setlocal completeopt-=preview
-
-
-"vim-javascript settings
-"Enables HTML/CSS syntax highlighting in your JavaScript file.
-" let g:javascript_enable_domhtmlcss = 1
-"enables javascript code folding
-" let b:javascript_fold = 1
-"disables JSDoc syntax highlighting
-" let g:javascript_ignore_javaScriptdoc = 0
-"customize concealing characters by defining the following variables:
-" let g:javascript_conceal_function   = "ƒ"
-" let g:javascript_conceal_null       = "ø"
-" let g:javascript_conceal_this       = "@"
-" let g:javascript_conceal_return     = "⇚"
-" let g:javascript_conceal_undefined  = "¿"
-" let g:javascript_conceal_NaN        = "ℕ"
-" let g:javascript_conceal_prototype  = "¶"
-" let g:javascript_conceal_static     = "•"
-" let g:javascript_conceal_super      = "Ω"
-
-
-" "emmet settings
-" let g:user_emmet_mode='n'    "only enable normal mode functions.
-" " let g:user_emmet_mode='a'    "enable all function in all mode.
-" let g:user_emmet_install_global=0
-" autocmd FileType html,css EmmetInstall
-
-
 "nerd tree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -338,6 +293,3 @@ let g:airline_right_sep = '◀'
 
 "enable fenced code block syntax highlighting in your markdown documents
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
-
-"zeal location
-let g:zv_zeal_executable = '/usr/bin/zeal'
