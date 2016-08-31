@@ -65,9 +65,12 @@ nnoremap j gj
 nnoremap k gk
 
 nnoremap <F2> :%s/\s\+$//g <cr> :noh<cr>
-vmap <C-c> "+y
-vmap <C-v> "+gP
-vmap <C-x> "+x
+nnoremap <F3> :%!python -m json.tool<cr>
+
+" vmap <C-c> "+y
+" vmap <C-v> "+gP
+" vmap <C-x> "+x
+set clipboard=unnamed
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "END OF MAPPINGS
@@ -79,9 +82,7 @@ colorscheme lucius
 let base16colorspace=256
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
-" set guifont=DejaVu\ Sans\ Mono\ 12
-" set guifont=Source\ Code\ Pro\ 12
-" set guifont=Cousine\ 11
+set guifont=Monaco:h14
 set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
 set guioptions-=r       "remove rightscroll

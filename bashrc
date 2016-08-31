@@ -26,6 +26,9 @@ alias ws='cd ~/Documents/misc./Workspace'
 alias epi='cd ~/Documents/Job/CodeInterview/EPI'
 alias episol='cd ~/Documents/Job/CodeInterview/EPI/sol/java/src/main/java/com/epi'
 alias dot='cd ~/repos/dotfiles'
+alias ios='cd ~/Documents/wayfair-ios'
+alias phpcode='cd ~/Documents/codebase/php'
+
 
 export TLDR_COLOR_BLANK="blue"
 export TLDR_COLOR_NAME="cyan"
