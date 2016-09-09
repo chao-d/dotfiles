@@ -13,6 +13,7 @@ Plugin 'jonathanfilip/vim-lucius'
 Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'morhetz/gruvbox'
+Plugin 'chriskempson/base16-vim'
 
 Plugin 'luochen1990/rainbow'
 Plugin 'davidhalter/jedi-vim'
@@ -24,6 +25,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'majutsushi/tagbar'
+Plugin 'vim-latex/vim-latex'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/syntastic'
@@ -40,8 +42,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
-Plugin 'b4winckler/vim-objc'
-Plugin 'eraserhd/vim-ios.git'
 
 
 call vundle#end()
@@ -65,12 +65,9 @@ nnoremap j gj
 nnoremap k gk
 
 nnoremap <F2> :%s/\s\+$//g <cr> :noh<cr>
-nnoremap <F3> :%!python -m json.tool<cr>
-
-" vmap <C-c> "+y
-" vmap <C-v> "+gP
-" vmap <C-x> "+x
-set clipboard=unnamed
+vmap <C-c> "+y
+vmap <C-v> "+gP
+vmap <C-x> "+x
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "END OF MAPPINGS
@@ -79,10 +76,11 @@ set clipboard=unnamed
 "appearance configurations
 set background=dark
 colorscheme lucius
-let base16colorspace=256
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
-set guifont=Monaco:h14
+" set guifont=DejaVu\ Sans\ Mono\ 12
+set guifont=Source\ Code\ Pro\ 12
+" set guifont=Cousine\ 11
 set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
 set guioptions-=r       "remove rightscroll
@@ -161,6 +159,12 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic white
 "taboo settings
 set sessionoptions+=tabpages,globals
 let g:taboo_tab_format="%N %f"
+
+"vim-latex settings
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat ='pdf'
+let g:Tex_UseMakefile = 0
 
 
 "double rainbow aha
@@ -278,6 +282,16 @@ let g:jedi#show_call_signatures = 0
 let g:jedi#squelch_py_warning = 1
 autocmd FileType python setlocal completeopt-=preview
 
+
+"Eclim settings
+"Eclim with YouCompleteMe
+let g:EclimCompletionMethod = 'omnifunc'
+"Eclim java settings
+autocmd FileType java nnoremap <silent> <buffer> <Leader>i :JavaImport<cr>
+autocmd FileType java nnoremap <silent> <buffer> <Leader>d :JavaDocSearch -x declarations<cr>
+autocmd FileType java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
+autocmd FileType java nnoremap <silent> <buffer> K :JavaDocPreview<cr>
+autocmd FileType java setlocal completeopt-=preview
 
 "nerd tree
 autocmd StdinReadPre * let s:std_in=1
