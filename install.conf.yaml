@@ -4,6 +4,10 @@
     ~/.bashrc:
         force: true
         path: bashrc
+    ~/.zshrc:
+        force: true
+        path: zshrc
+    ~/.oh-my-zsh: ohmyzsh
     ~/.gitconfig: gitconfig
     ~/.tmux: tmux/
     ~/.tmux.conf: tmux.conf

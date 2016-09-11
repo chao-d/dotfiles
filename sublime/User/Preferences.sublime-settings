@@ -7,12 +7,13 @@
 		"trie"
 	],
 	"auto_complete_cycle": true,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai Bright (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"detect_indentation": false,
 	"font_face": "Source Code Pro",
 	"font_size": 12,
 	"ignored_packages":
 	[
+		"ConvertToUTF8",
 		"Git"
 	],
 	"indent_guide_options":

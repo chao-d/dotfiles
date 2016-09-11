@@ -3,7 +3,7 @@ set nocompatible
 
 " Vundle setup
 filetype off
-set runtimepath+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
@@ -13,7 +13,7 @@ Plugin 'jonathanfilip/vim-lucius'
 Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'morhetz/gruvbox'
-Plugin 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'luochen1990/rainbow'
 Plugin 'davidhalter/jedi-vim'
@@ -22,7 +22,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-latex/vim-latex'
@@ -36,7 +36,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'gregsexton/VimCalc'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -46,6 +45,10 @@ Plugin 'tpope/vim-markdown'
 
 call vundle#end()
 " end of Vundle
+
+"load ftplugins and indent files
+filetype plugin indent on
+filetype on
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -64,7 +67,9 @@ nnoremap OO O<Esc>j
 nnoremap j gj
 nnoremap k gk
 
+"remove trailing space
 nnoremap <F2> :%s/\s\+$//g <cr> :noh<cr>
+
 vmap <C-c> "+y
 vmap <C-v> "+gP
 vmap <C-x> "+x
@@ -94,52 +99,38 @@ set nobackup
 cd %:p:h
 set noautochdir
 
-"load ftplugins and indent files
-filetype plugin indent on
-filetype on
-
-
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
 
 "solve E764
 set omnifunc=syntaxcomplete#Complete
 
 set lines=30 columns=85
 
-
 set number
 set relativenumber
 
+"set nowrap               " dont wrap lines
+set linebreak            " wrap lines at convenient points
 
-"set nowrap              "dont wrap lines
-set linebreak           "wrap lines at convenient points
-
-
-set mouse=a             "enable mouse
-
+set mouse=a              " enable mouse
 
 set ruler
 
-
-set wildmenu            "enable ctrl-n/p to scroll thru matches
+set wildmenu             " enable ctrl-n/p to scroll thru matches
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 
+set showcmd              " show incomplete cmds down the bottom
+set showmode             " show current mode down the bottom
 
-set showcmd             "show incomplete cmds down the bottom
-set showmode            "show current mode down the bottom
-
-
-set incsearch           "find the next match as we type the search
-set hlsearch            "hilight searches by default
+set incsearch            " find the next match as we type the search
+set hlsearch             " hilight searches by default
 
 set ignorecase
 set smartcase
-
 
 syntax on
 
@@ -221,17 +212,6 @@ let g:ctrlp_custom_ignore = {
     \ }
 
 
-
-"Syntastic settings
-" set statusline+=%*
-
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:syntastic_enable_signs = 1
-
-
 "You Complete Me
 " let g:loaded_youcompleteme = 0
 let g:jedi#completions_enabled = 0
@@ -255,16 +235,17 @@ let g:UltiSnipsEditSplit="vertical"
 "vim-commentary
 "gcc
 autocmd FileType python set commentstring=#\ %s
+autocmd FileType java set commentstring=//\ %s
 autocmd FileType c set commentstring=//\ %s
 autocmd FileType cpp set commentstring=//\ %s
 
 
 "Bufexplorer
-noremap <c-tab> :BufExplorer<cr>
+nnoremap <F7> :BufExplorer<cr>
 
 
 "Tagbar
-nmap <F8> :TagbarToggle<cr>
+nnoremap <F8> :TagbarToggle<cr>
 
 
 "yankstack
@@ -281,22 +262,6 @@ let g:jedi#popup_on_dot = 1
 let g:jedi#show_call_signatures = 0
 let g:jedi#squelch_py_warning = 1
 autocmd FileType python setlocal completeopt-=preview
-
-
-"Eclim settings
-"Eclim with YouCompleteMe
-let g:EclimCompletionMethod = 'omnifunc'
-"Eclim java settings
-autocmd FileType java nnoremap <silent> <buffer> <Leader>i :JavaImport<cr>
-autocmd FileType java nnoremap <silent> <buffer> <Leader>d :JavaDocSearch -x declarations<cr>
-autocmd FileType java nnoremap <silent> <buffer> <cr> :JavaSearchContext<cr>
-autocmd FileType java nnoremap <silent> <buffer> K :JavaDocPreview<cr>
-autocmd FileType java setlocal completeopt-=preview
-
-"nerd tree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <C-e> :NERDTreeToggle<CR>
 
 
 "airline

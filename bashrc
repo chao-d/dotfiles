@@ -13,18 +13,24 @@ fi
 export PATH=/usr/local/bin:$PATH
 eval $(thefuck --alias fuck)
 
+# On unix based systems, this enables copy and paste using system clipboard
+alias vim='vimx'
+alias vi='vimx'
+
 alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
 alias repo='cd ~/repos'
-alias job='cd ~/Documents/Job'
-alias lt='cd ~/Documents/Job/CodeInterview/Leetcode'
 alias book='cd ~/Documents/Books'
 alias bu='cd ~/Documents/BU'
 alias ws='cd ~/Documents/misc./Workspace'
+alias dot='cd ~/repos/dotfiles'
+
+alias job='cd ~/Documents/Job'
+alias nine='cd ~/Documents/Job/CodeInterview/NineChapter'
+alias lt='cd ~/Documents/Job/CodeInterview/Leetcode'
 alias epi='cd ~/Documents/Job/CodeInterview/EPI'
 alias episol='cd ~/Documents/Job/CodeInterview/EPI/sol/java/src/main/java/com/epi'
-alias dot='cd ~/repos/dotfiles'
 
 export TLDR_COLOR_BLANK="blue"
 export TLDR_COLOR_NAME="cyan"

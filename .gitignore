@@ -1,5 +1,5 @@
 .gitignore
-vim/bundle/*
+vim/*
 tmux/plugins/*
 tmux/resurrect/*
 sublime/User/encoding_cache.json
