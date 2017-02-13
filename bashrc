@@ -13,9 +13,8 @@ fi
 export PATH=/usr/local/bin:$PATH
 eval $(thefuck --alias fuck)
 
-# On unix based systems, this enables copy and paste using system clipboard
-alias vim='vimx'
-alias vi='vimx'
+# alias vim='vimx'
+# alias vi='vimx'
 
 alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'

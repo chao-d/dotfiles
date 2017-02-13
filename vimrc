@@ -213,7 +213,7 @@ let g:ctrlp_custom_ignore = {
 
 
 "You Complete Me
-" let g:loaded_youcompleteme = 0
+" let g:loaded_youcompleteme = 1 # uncomment this to disable ycm
 let g:jedi#completions_enabled = 0
 let g:ycm_complete_in_comments = 1
 let g:ycm_min_num_of_chars_for_completion = 2
