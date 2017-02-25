@@ -41,6 +41,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
+Plugin 'rizzatti/dash.vim'
 
 
 call vundle#end()
@@ -273,3 +274,6 @@ let g:airline_right_sep = '◀'
 
 "enable fenced code block syntax highlighting in your markdown documents
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+
+"dash
+nmap <silent> <leader>d <Plug>DashSearch

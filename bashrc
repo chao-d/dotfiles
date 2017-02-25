@@ -16,6 +16,8 @@ eval $(thefuck --alias fuck)
 # alias vim='vimx'
 # alias vi='vimx'
 
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+
 alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
