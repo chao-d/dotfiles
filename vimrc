@@ -1,4 +1,4 @@
-"Use Vim settings, rather then Vi settings
+" Use Vim settings, rather then Vi settings
 set nocompatible
 
 " Vundle setup
@@ -47,7 +47,7 @@ Plugin 'rizzatti/dash.vim'
 call vundle#end()
 " end of Vundle
 
-"load ftplugins and indent files
+" load ftplugins and indent files
 filetype plugin indent on
 filetype on
 
@@ -55,20 +55,20 @@ filetype on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"leader
+" leader
 let mapleader = ","
 
-"map ESC to JK
+" map ESC to JK
 inoremap jk <ESC>
-"insert a new line without entering insert mode
+" insert a new line without entering insert mode
 nnoremap oo o<Esc>k
 nnoremap OO O<Esc>j
 
-"move between wrapped lines using j k
+" move between wrapped lines using j k
 nnoremap j gj
 nnoremap k gk
 
-"remove trailing space
+" remove trailing space
 nnoremap <F2> :%s/\s\+$//g <cr> :noh<cr>
 
 vmap <C-c> "+y
@@ -79,34 +79,36 @@ vmap <C-x> "+x
 "END OF MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"appearance configurations
+" appearance configurations
 set background=dark
-colorscheme lucius
+colorscheme jellybeans
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 " set guifont=DejaVu\ Sans\ Mono\ 12
-set guifont=Source\ Code\ Pro\ 12
-" set guifont=Cousine\ 11
+" set guifont=Source\ Code\ Pro\ 14
+set guifont=Monaco:h16
+" set guifont=Source\ Code\ Pro\ for\ Powerline
 set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
 set guioptions-=r       "remove rightscroll
 
 set cc=80
 
-"no swap and backup
+" no swap and backup
 set noswapfile
 set nobackup
 
 cd %:p:h
 set noautochdir
 
-"allow backspacing over everything in insert mode
+" allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-"solve E764
+" solve E764
 set omnifunc=syntaxcomplete#Complete
 
-set lines=30 columns=85
+set lines=40
+set columns=120
 
 set number
 set relativenumber
@@ -135,7 +137,7 @@ set smartcase
 
 syntax on
 
-"indentation settings
+" indentation settings
 set autoindent
 set cindent
 set tabstop=4
@@ -148,18 +150,25 @@ set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
 
-"taboo settings
+" persistant undo, enable undo reopen closed files
+set undofile
+set undolevels=100     " number of undos
+set undoreload=10000   " number of lines
+
+
+" taboo settings
 set sessionoptions+=tabpages,globals
 let g:taboo_tab_format="%N %f"
 
-"vim-latex settings
+
+" vim-latex settings
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat ='pdf'
 let g:Tex_UseMakefile = 0
 
 
-"double rainbow aha
+" double rainbow aha
 let g:rainbow_active = 0
 nnoremap <Leader>~ :RainbowToggle<CR>
 let g:rainbow_conf = {
@@ -213,7 +222,7 @@ let g:ctrlp_custom_ignore = {
     \ }
 
 
-"You Complete Me
+" You Complete Me
 " let g:loaded_youcompleteme = 1 # uncomment this to disable ycm
 let g:jedi#completions_enabled = 0
 let g:ycm_complete_in_comments = 1
@@ -224,39 +233,39 @@ let g:ycm_show_diagnostics_ui = 0
 let g:neocomplcache_enable_at_startup = 0
 
 
-"Ultisnips
-"Trigger configuration
+" Ultisnips
+" Trigger configuration
 let g:UltiSnipsExpandTrigger="<c-k>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-"If you want :UltiSnipsEdit to split your window.
+" If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
 
-"vim-commentary
-"gcc
+" vim-commentary
+" gcc
 autocmd FileType python set commentstring=#\ %s
 autocmd FileType java set commentstring=//\ %s
 autocmd FileType c set commentstring=//\ %s
 autocmd FileType cpp set commentstring=//\ %s
 
 
-"Bufexplorer
+" Bufexplorer
 nnoremap <F7> :BufExplorer<cr>
 
 
-"Tagbar
+" Tagbar
 nnoremap <F8> :TagbarToggle<cr>
 
 
-"yankstack
+" yankstack
 let g:yankstack_map_keys = 0
 nmap <Leader>j <Plug>yankstack_substitute_older_paste
 nmap <Leader>k <Plug>yankstack_substitute_newer_paste
 nnoremap <F10>: Yanks<CR>
 
 
-"jedi-vim settings
+" jedi-vim settings
 let g:jedi#usages_command = "<leader>s"
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 1
@@ -265,15 +274,18 @@ let g:jedi#squelch_py_warning = 1
 autocmd FileType python setlocal completeopt-=preview
 
 
-"airline
+" airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 
+" airline theme
+let g:airline_theme='base16'
 
-"enable fenced code block syntax highlighting in your markdown documents
+
+" enable fenced code block syntax highlighting in your markdown documents
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 
-"dash
+" dash
 nmap <silent> <leader>d <Plug>DashSearch

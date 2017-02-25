@@ -90,14 +90,13 @@ eval $(thefuck --alias fuck)
 # alias vim='vimx'
 # alias vi='vimx'
 
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-
 # alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
 alias repo='cd ~/repos'
 alias dot='cd ~/repos/dotfiles'
 alias job='cd ~/Documents/Job'
+alias book='cd ~/Documents/Books'
 
 export TLDR_COLOR_BLANK="blue"
 export TLDR_COLOR_NAME="cyan"

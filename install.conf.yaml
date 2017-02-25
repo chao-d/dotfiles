@@ -16,9 +16,12 @@
         force: true
         path: vimrc
     ~/.fonts: fonts/
-    ~/.config/sublime-text-3/Packages/User:
+    ~/Library/Application Support/Sublime Text 3/Packages/User:
         create: true
         path: sublime/User/
+    # ~/.config/sublime-text-3/Packages/User:
+    #     create: true
+    #     path: sublime/User/
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
