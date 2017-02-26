@@ -85,12 +85,13 @@ colorscheme jellybeans
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 " set guifont=DejaVu\ Sans\ Mono\ 12
-" set guifont=Source\ Code\ Pro\ 14
-set guifont=Monaco:h16
-" set guifont=Source\ Code\ Pro\ for\ Powerline
+" set guifont=Monaco:h16
+set guifont=Source\ Code\ Pro:h16
 set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
 set guioptions-=r       "remove rightscroll
+
+set encoding=utf-8
 
 set cc=80
 
@@ -276,9 +277,10 @@ autocmd FileType python setlocal completeopt-=preview
 
 " airline
 set laststatus=2
-let g:airline_powerline_fonts = 1
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
+let g:Powerline_symbols='unicode'
+" let g:airline_powerline_fonts = 1
 
 " airline theme
 let g:airline_theme='base16'
