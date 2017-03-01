@@ -290,4 +290,4 @@ let g:airline_theme='base16'
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 
 " dash
-nmap <silent> <leader>d <Plug>DashSearch
+nmap <silent> <leader><leader>d <Plug>DashSearch
