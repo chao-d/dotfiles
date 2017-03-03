@@ -86,6 +86,13 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:$PATH
 eval $(thefuck --alias fuck)
 
+# For a ipython notebook and pyspark integration
+if which pyspark > /dev/null; then
+    export SPARK_HOME="/usr/local/Cellar/apache-spark/2.1.0/libexec/"
+    export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
+    export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$PYTHONPATH
+fi
+
 # On unix based systems, this enables copy and paste using system clipboard
 # alias vim='vimx'
 # alias vi='vimx'
