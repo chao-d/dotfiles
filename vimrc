@@ -1,51 +1,43 @@
-" Use Vim settings, rather then Vi settings
 set nocompatible
-
-" Vundle setup
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'jonathanfilip/vim-lucius'
-Plugin 'tomasr/molokai'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'morhetz/gruvbox'
-Plugin 'altercation/vim-colors-solarized'
+Plug 'nanotech/jellybeans.vim'
+Plug 'jonathanfilip/vim-lucius'
+Plug 'tomasr/molokai'
+Plug 'w0ng/vim-hybrid'
+Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 
-Plugin 'luochen1990/rainbow'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-commentary'
-Plugin 'maxbrunsfeld/vim-yankstack'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'majutsushi/tagbar'
-Plugin 'vim-latex/vim-latex'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'scrooloose/syntastic'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'gcmt/taboo.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'gregsexton/VimCalc'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-markdown'
-Plugin 'rizzatti/dash.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'gcmt/taboo.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/syntastic'
+Plug 'Valloric/YouCompleteMe'
+Plug 'rizzatti/dash.vim'
 
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
-call vundle#end()
-" end of Vundle
+Plug 'luochen1990/rainbow', {'on': 'RainbowToggle'}
+Plug 'gregsexton/VimCalc', {'on': 'Calc'}
+
+Plug 'vim-latex/vim-latex', {'for': 'tex'}
+
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
+
+call plug#end()
 
 " load ftplugins and indent files
 filetype plugin indent on
@@ -60,9 +52,6 @@ let mapleader = ","
 
 " map ESC to JK
 inoremap jk <ESC>
-" insert a new line without entering insert mode
-nnoremap oo o<Esc>k
-nnoremap OO O<Esc>j
 
 " move between wrapped lines using j k
 nnoremap j gj
@@ -84,12 +73,15 @@ set background=dark
 colorscheme jellybeans
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
-" set guifont=DejaVu\ Sans\ Mono\ 12
-" set guifont=Monaco:h16
-set guifont=Source\ Code\ Pro:h16
 set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
 set guioptions-=r       "remove rightscroll
+
+if has("maxunix")
+    set guifont=Source\ Code\ Pro:h16
+elseif has("unix")
+    set guifont=Source\ Code\ Pro\ 16
+endif
 
 set encoding=utf-8
 
@@ -104,9 +96,6 @@ set noautochdir
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-" solve E764
-set omnifunc=syntaxcomplete#Complete
 
 set lines=40
 set columns=120
@@ -131,7 +120,7 @@ set showcmd              " show incomplete cmds down the bottom
 set showmode             " show current mode down the bottom
 
 set incsearch            " find the next match as we type the search
-set hlsearch             " hilight searches by default
+set hlsearch             " highlight searches by default
 
 set ignorecase
 set smartcase
@@ -171,7 +160,7 @@ let g:Tex_UseMakefile = 0
 
 " double rainbow aha
 let g:rainbow_active = 0
-nnoremap <Leader>~ :RainbowToggle<CR>
+nnoremap <Leader><Leader>r :RainbowToggle<CR>
 let g:rainbow_conf = {
     \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
     \   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
@@ -255,10 +244,6 @@ autocmd FileType cpp set commentstring=//\ %s
 nnoremap <F7> :BufExplorer<cr>
 
 
-" Tagbar
-nnoremap <F8> :TagbarToggle<cr>
-
-
 " yankstack
 let g:yankstack_map_keys = 0
 nmap <Leader>j <Plug>yankstack_substitute_older_paste
@@ -276,14 +261,12 @@ autocmd FileType python setlocal completeopt-=preview
 
 
 " airline
+let g:airline_theme='base16'
 set laststatus=2
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:Powerline_symbols='unicode'
 " let g:airline_powerline_fonts = 1
-
-" airline theme
-let g:airline_theme='base16'
 
 
 " enable fenced code block syntax highlighting in your markdown documents
