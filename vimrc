@@ -24,7 +24,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
-Plug 'Valloric/YouCompleteMe'
 Plug 'rizzatti/dash.vim'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
@@ -36,6 +35,17 @@ Plug 'gregsexton/VimCalc', {'on': 'Calc'}
 Plug 'vim-latex/vim-latex', {'for': 'tex'}
 
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
+
+function! BuildYCM(info)
+    " info is a dictionary with 3 fields
+    " - name:   name of the plugin
+    " - status: 'installed', 'updated', or 'unchanged'
+    " - force:  set on PlugInstall! or PlugUpdate!
+    if a:info.status == 'installed'
+        !./install.py
+    endif
+endfunction
+Plug 'Valloric/YouCompleteMe', {'do': function('BuildYCM')}
 
 call plug#end()
 

@@ -4,7 +4,7 @@
 
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    summary = log --abbrev-commit --pretty=oneline --author="muteness" --since=last.mon --reverse
+    summary = log --abbrev-commit --pretty=oneline --author="Chao Duan" --since=last.mon --reverse
     co = checkout
     br = branch
     ci = commit

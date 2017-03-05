@@ -29,16 +29,14 @@ alias dow='cd ~/Downloads'
 alias repo='cd ~/repos'
 alias book='cd ~/Documents/Books'
 alias dot='cd ~/repos/dotfiles'
-
 alias job='cd ~/Documents/Job'
 alias nine='cd ~/Documents/Job/CodeInterview/NineChapter'
+alias ci='cd ~/Documents/Job/CodeInterview'
+alias note='cd ~/Documents/Job/CodeInterview/Notes'
 
-export TLDR_COLOR_BLANK="blue"
-export TLDR_COLOR_NAME="cyan"
-export TLDR_COLOR_DESCRIPTION="blue"
-export TLDR_COLOR_EXAMPLE="red"
-export TLDR_COLOR_COMMAND="blue"
-
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+export TLDR_COLOR_BLANK="yellow"
+export TLDR_COLOR_NAME="red"
+export TLDR_COLOR_DESCRIPTION="green"
+export TLDR_COLOR_EXAMPLE="blue"
+export TLDR_COLOR_COMMAND="white"
+export TLDR_COLOR_PARAMETER="red"
