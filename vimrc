@@ -80,7 +80,7 @@ vmap <C-x> "+x
 
 " appearance configurations
 set background=dark
-colorscheme jellybeans
+colorscheme solarized
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 set guioptions-=T       "remove toolbar
