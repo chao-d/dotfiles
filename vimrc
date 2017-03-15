@@ -74,6 +74,18 @@ vmap <C-c> "+y
 vmap <C-v> "+gP
 vmap <C-x> "+x
 
+" toggle different backgrounds
+function! ToggleBG()
+    let s:tbg = &background
+    " Inversion
+    if s:tbg == "dark"
+        set background=light
+    else
+        set background=dark
+    endif
+endfunction
+noremap <leader>bg :call ToggleBG()<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "END OF MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
