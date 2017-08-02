@@ -1,5 +1,6 @@
 .gitignore
 vim/plugged
+vim/.netrwhist
 tmux/plugins/*
 tmux/resurrect/*
 sublime/User/encoding_cache.json

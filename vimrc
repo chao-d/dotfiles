@@ -99,11 +99,13 @@ set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
 set guioptions-=r       "remove rightscroll
 
-if has("maxunix")
-    set guifont=Source\ Code\ Pro:h16
+
+if has("macunix")
+    set guifont=Monaco:h16
 elseif has("unix")
     set guifont=Source\ Code\ Pro\ 16
 endif
+
 
 set encoding=utf-8
 
