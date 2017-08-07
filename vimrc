@@ -296,5 +296,10 @@ let g:Powerline_symbols='unicode'
 " enable fenced code block syntax highlighting in your markdown documents
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 
+
 " dash
 nmap <silent> <leader><leader>d <Plug>DashSearch
+
+
+" syntastic
+let g:syntastic_python_checkers = ['pylint']
