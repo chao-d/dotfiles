@@ -5,5 +5,6 @@ tmux/plugins/*
 tmux/resurrect/*
 sublime/User/encoding_cache.json
 sublime/User/Package\ Control.*
+sublime/User/SublimeLinter/*
 sublime/.DS_Store
 .*.un~
