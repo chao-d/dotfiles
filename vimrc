@@ -70,9 +70,9 @@ nnoremap k gk
 " remove trailing space
 nnoremap <F2> :%s/\s\+$//g <cr> :noh<cr>
 
-vmap <C-c> "+y
-vmap <C-v> "+gP
-vmap <C-x> "+x
+vmap <D-c> "+y
+vmap <D-v> "+gP
+vmap <D-x> "+x
 
 " toggle different backgrounds
 function! ToggleBG()
