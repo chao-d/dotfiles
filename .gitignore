@@ -8,3 +8,4 @@ sublime/User/Package\ Control.*
 sublime/User/SublimeLinter/*
 sublime/.DS_Store
 .*.un~
+.DS_Store
