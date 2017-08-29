@@ -91,7 +91,7 @@ noremap <leader>bg :call ToggleBG()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " appearance configurations
-set background=dark
+set background=light
 colorscheme lucius
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
