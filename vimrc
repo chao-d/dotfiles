@@ -91,7 +91,7 @@ noremap <leader>bg :call ToggleBG()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " appearance configurations
-set background=light
+set background=dark
 colorscheme lucius
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
@@ -302,4 +302,4 @@ nmap <silent> <leader><leader>d <Plug>DashSearch
 
 
 " syntastic
-let g:syntastic_python_checkers = ['pylint']
+" let g:syntastic_python_checkers = ['pylint']
