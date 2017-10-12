@@ -13,8 +13,7 @@
 	"font_size": 15,
 	"ignored_packages":
 	[
-		"ConvertToUTF8",
-		"Vintage Numbers"
+		"ConvertToUTF8"
 	],
 	"indent_guide_options":
 	[

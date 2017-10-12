@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Vintage Numbers"
 	],
 	"installed_packages":
 	[
@@ -19,7 +18,6 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"Terminal",
-		"Tomorrow Color Schemes",
-		"Vintage Numbers"
+		"Tomorrow Color Schemes"
 	]
 }
