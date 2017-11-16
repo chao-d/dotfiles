@@ -7,6 +7,9 @@
     ~/.zshrc:
         force: true
         path: zshrc
+    ~/.emacs.d:
+        force: true
+        path: emacs.d/
     ~/.oh-my-zsh: ohmyzsh
     ~/.gitconfig: gitconfig
     ~/.tmux: tmux/

@@ -96,6 +96,7 @@ fi
 # On unix based systems, this enables copy and paste using system clipboard
 # alias vim='vimx'
 # alias vi='vimx'
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
 # alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'
