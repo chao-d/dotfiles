@@ -13,7 +13,9 @@
 	"font_size": 15,
 	"ignored_packages":
 	[
-		"ConvertToUTF8"
+		"ConvertToUTF8",
+		"GitGutter",
+		"SublimeLinter"
 	],
 	"indent_guide_options":
 	[
