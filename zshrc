@@ -107,6 +107,7 @@ alias job='cd ~/Documents/Job'
 alias book='cd ~/Documents/Books'
 alias ci='cd ~/Documents/Job/CodeInterview'
 alias note='cd ~/Documents/Job/CodeInterview/Notes'
+alias laioffer='cd ~/Documents/Job/CodeInterview/laioffer'
 alias resume='cd ~/Documents/Job/resume'
 
 export TLDR_COLOR_BLANK="yellow"
