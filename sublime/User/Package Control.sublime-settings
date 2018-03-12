@@ -11,14 +11,15 @@
 		"Git",
 		"GitGutter",
 		"Gruvbox Dark",
+		"HTML5",
+		"jQuery",
 		"LaTeX Snippets",
 		"LaTeXTools",
 		"Package Control",
-		"Predawn",
 		"Pretty JSON",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"Terminal",
-		"Tomorrow Color Schemes"
+		"TrailingSpaces"
 	]
 }

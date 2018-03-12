@@ -302,4 +302,5 @@ nmap <silent> <leader><leader>d <Plug>DashSearch
 
 
 " syntastic
-" let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_mode_map = {'mode': 'passive'}
