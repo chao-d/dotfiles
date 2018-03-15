@@ -12,6 +12,7 @@
         path: emacs.d/
     ~/.oh-my-zsh: ohmyzsh
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
     ~/.tmux: tmux/
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
@@ -28,3 +29,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [git config --global core.excludesfile '~/.gitignore_global', Setting up global gitignore]
