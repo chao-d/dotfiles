@@ -20,6 +20,10 @@ if which pyspark > /dev/null; then
     export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$PYTHONPATH
 fi
 
+# For SML
+export PATH="$PATH:/usr/local/smlnj/bin"
+
+
 # alias vim='vimx'
 # alias vi='vimx'
 
