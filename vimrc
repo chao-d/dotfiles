@@ -244,6 +244,12 @@ let g:ycm_min_num_of_chars_for_completion = 2
 let g:ycm_complete_in_strings = 1
 let g:ycm_show_diagnostics_ui = 0
 
+" surpress the warning
+if has('python3')
+  silent! python3 1
+endif
+
+
 let g:neocomplcache_enable_at_startup = 0
 
 
@@ -302,5 +308,5 @@ nmap <silent> <leader><leader>d <Plug>DashSearch
 
 
 " syntastic
-let g:syntastic_python_checkers = ['pylint']
+" let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_mode_map = {'mode': 'passive'}
