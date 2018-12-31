@@ -1,11 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
-# For SML
-export PATH="$PATH:/usr/local/smlnj/bin"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -86,20 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=/usr/local/bin:$PATH
-eval $(thefuck --alias fuck)
-
-# For a ipython notebook and pyspark integration
-if which pyspark > /dev/null; then
-    export SPARK_HOME="/usr/local/Cellar/apache-spark/2.1.0/libexec/"
-    export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
-    export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$PYTHONPATH
-fi
 
 # On unix based systems, this enables copy and paste using system clipboard
 # alias vim='vimx'
 # alias vi='vimx'
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+# alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
 # alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'

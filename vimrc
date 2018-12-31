@@ -136,7 +136,6 @@ set ruler
 
 set wildmenu             " enable ctrl-n/p to scroll thru matches
 set history=1000         " remember more commands and search history
-set undolevels=1000      " use many muchos levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 
@@ -165,8 +164,9 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic white
 
 
 " persistant undo, enable undo reopen closed files
+set undodir=~/.undo
 set undofile
-set undolevels=100     " number of undos
+set undolevels=1000    " levels of undo
 set undoreload=10000   " number of lines
 
 
@@ -310,3 +310,5 @@ nmap <silent> <leader><leader>d <Plug>DashSearch
 " syntastic
 " let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_mode_map = {'mode': 'passive'}
+
+
