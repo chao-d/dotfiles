@@ -25,6 +25,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
 Plug 'rizzatti/dash.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
@@ -70,6 +72,22 @@ nnoremap k gk
 " remove trailing space
 nnoremap <F2> :%s/\s\+$//g <cr> :noh<cr>
 
+" nerdtree
+nnoremap <F3> :NERDTreeToggle<cr>
+
+" tagbar
+nnoremap <F4> :TagbarToggle<cr>
+
+" Bufexplorer
+nnoremap <F7> :BufExplorer<cr>
+
+" yankstack
+let g:yankstack_map_keys = 0
+nmap <Leader>j <Plug>yankstack_substitute_older_paste
+nmap <Leader>k <Plug>yankstack_substitute_newer_paste
+nnoremap <F10>: Yanks<cr>
+
+
 vmap <D-c> "+y
 vmap <D-v> "+gP
 vmap <D-x> "+x
@@ -84,7 +102,7 @@ function! ToggleBG()
         set background=dark
     endif
 endfunction
-noremap <leader>bg :call ToggleBG()<CR>
+noremap <leader>bg :call ToggleBG()<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "END OF MAPPINGS
@@ -109,7 +127,7 @@ endif
 
 set encoding=utf-8
 
-set cc=80
+set cc=120
 
 " no swap and backup
 set noswapfile
@@ -184,7 +202,7 @@ let g:Tex_UseMakefile = 0
 
 " double rainbow aha
 let g:rainbow_active = 0
-nnoremap <Leader><Leader>r :RainbowToggle<CR>
+nnoremap <Leader><Leader>r :RainbowToggle<cr>
 let g:rainbow_conf = {
     \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
     \   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
@@ -270,16 +288,6 @@ autocmd FileType c set commentstring=//\ %s
 autocmd FileType cpp set commentstring=//\ %s
 
 
-" Bufexplorer
-nnoremap <F7> :BufExplorer<cr>
-
-
-" yankstack
-let g:yankstack_map_keys = 0
-nmap <Leader>j <Plug>yankstack_substitute_older_paste
-nmap <Leader>k <Plug>yankstack_substitute_newer_paste
-nnoremap <F10>: Yanks<CR>
-
 
 " jedi-vim settings
 let g:jedi#usages_command = "<leader>s"
@@ -311,4 +319,8 @@ nmap <silent> <leader><leader>d <Plug>DashSearch
 " let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_mode_map = {'mode': 'passive'}
 
+
+" eclim
+let g:EclimCompletionMethod = 'omnifunc'
+noremap <silent> <buffer> <leader>i :JavaImport<cr>
 
