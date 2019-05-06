@@ -27,6 +27,7 @@ Plug 'scrooloose/syntastic'
 Plug 'rizzatti/dash.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
+Plug 'mattn/emmet-vim'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
@@ -109,8 +110,8 @@ noremap <leader>bg :call ToggleBG()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " appearance configurations
-set background=dark
-colorscheme lucius
+set background=light
+colorscheme solarized
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 set guioptions-=T       "remove toolbar
