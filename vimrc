@@ -39,6 +39,8 @@ Plug 'vim-latex/vim-latex', {'for': 'tex'}
 
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 function! BuildYCM(info)
     " info is a dictionary with 3 fields
     " - name:   name of the plugin
