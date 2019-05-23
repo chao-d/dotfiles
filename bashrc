@@ -20,8 +20,6 @@ alias dow='cd ~/Downloads'
 alias repo='cd ~/repos'
 alias book='cd ~/Documents/Books'
 alias dot='cd ~/repos/dotfiles'
-alias job='cd ~/Documents/Job'
-alias nine='cd ~/Documents/Job/CodeInterview/NineChapter'
 alias ci='cd ~/Documents/Job/CodeInterview'
 alias note='cd ~/Documents/Job/CodeInterview/Notes'
 

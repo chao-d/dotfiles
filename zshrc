@@ -110,3 +110,9 @@ export TLDR_COLOR_DESCRIPTION="green"
 export TLDR_COLOR_EXAMPLE="blue"
 export TLDR_COLOR_COMMAND="white"
 export TLDR_COLOR_PARAMETER="red"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/chao/repos/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc'; fi
