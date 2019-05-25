@@ -1,6 +1,7 @@
 vim/plugged
 vim/.netrwhist
 tmux/plugins/*
+!tmux/plugins/tpm
 tmux/resurrect/*
 sublime/User/encoding_cache.json
 sublime/User/Package\ Control.*
