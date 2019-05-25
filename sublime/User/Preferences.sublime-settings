@@ -7,7 +7,7 @@
 		"trie"
 	],
 	"auto_complete_cycle": true,
-	"color_scheme": "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).sublime-color-scheme",
 	"detect_indentation": false,
 	"font_face": "Monaco",
 	"font_size": 16,
