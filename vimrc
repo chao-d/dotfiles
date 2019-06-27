@@ -16,18 +16,15 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'gcmt/taboo.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/syntastic'
 Plug 'rizzatti/dash.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
-Plug 'mattn/emmet-vim'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
@@ -35,11 +32,14 @@ Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow', {'on': 'RainbowToggle'}
 Plug 'gregsexton/VimCalc', {'on': 'Calc'}
 
-Plug 'vim-latex/vim-latex', {'for': 'tex'}
-
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'w0rp/ale'
+
+" Plug 'vim-latex/vim-latex', {'for': 'tex'}
+" Plug 'mattn/emmet-vim'
+" Plug 'gcmt/taboo.vim'
 
 function! BuildYCM(info)
     " info is a dictionary with 3 fields
@@ -190,19 +190,6 @@ set undofile
 set undolevels=1000    " levels of undo
 set undoreload=10000   " number of lines
 
-
-" taboo settings
-set sessionoptions+=tabpages,globals
-let g:taboo_tab_format="%N %f"
-
-
-" vim-latex settings
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
-let g:Tex_DefaultTargetFormat ='pdf'
-let g:Tex_UseMakefile = 0
-
-
 " double rainbow aha
 let g:rainbow_active = 0
 nnoremap <Leader><Leader>r :RainbowToggle<cr>
@@ -291,7 +278,6 @@ autocmd FileType c set commentstring=//\ %s
 autocmd FileType cpp set commentstring=//\ %s
 
 
-
 " jedi-vim settings
 let g:jedi#usages_command = "<leader>s"
 let g:jedi#use_tabs_not_buffers = 0
@@ -318,12 +304,24 @@ let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 nmap <silent> <leader><leader>d <Plug>DashSearch
 
 
-" syntastic
-" let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_mode_map = {'mode': 'passive'}
+" vim-go
+let g:go_fmt_command = "gofmt"
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 
-" eclim
-let g:EclimCompletionMethod = 'omnifunc'
-noremap <silent> <buffer> <leader>i :JavaImport<cr>
+" " taboo settings
+" set sessionoptions+=tabpages,globals
+" let g:taboo_tab_format="%N %f"
 
+
+" " vim-latex settings
+" set grepprg=grep\ -nH\ $*
+" let g:tex_flavor='latex'
+" let g:Tex_DefaultTargetFormat ='pdf'
+" let g:Tex_UseMakefile = 0
+
+
+" " eclim
+" let g:EclimCompletionMethod = 'omnifunc'
+" noremap <silent> <buffer> <leader>i :JavaImport<cr>
