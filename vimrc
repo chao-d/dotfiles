@@ -112,8 +112,8 @@ noremap <leader>bg :call ToggleBG()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " appearance configurations
-set background=light
-colorscheme solarized
+set background=dark
+colorscheme lucius
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 set guioptions-=T       "remove toolbar
