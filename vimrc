@@ -25,6 +25,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'rizzatti/dash.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
+Plug 'w0rp/ale'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
@@ -34,9 +35,7 @@ Plug 'gregsexton/VimCalc', {'on': 'Calc'}
 
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'w0rp/ale'
-
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug 'vim-latex/vim-latex', {'for': 'tex'}
 " Plug 'mattn/emmet-vim'
 " Plug 'gcmt/taboo.vim'
@@ -305,9 +304,9 @@ nmap <silent> <leader><leader>d <Plug>DashSearch
 
 
 " vim-go
-let g:go_fmt_command = "gofmt"
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
+" let g:go_fmt_command = "gofmt"
+" let g:go_def_mode='gopls'
+" let g:go_info_mode='gopls'
 
 
 " " taboo settings
