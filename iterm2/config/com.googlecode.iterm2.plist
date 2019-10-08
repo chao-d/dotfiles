@@ -711,7 +711,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 199 1016 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>272 54 1130 730 0 0 1440 877 </string>
+	<string>68 147 1130 730 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_A43D1B57-9956-453D-B871-575C66AB7384</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A43D1B57-9956-453D-B871-575C66AB7384_selection</key>
@@ -913,7 +913,7 @@
 			<key>Columns</key>
 			<integer>112</integer>
 			<key>Command</key>
-			<string>/bin/zsh</string>
+			<string>/usr/local/bin/zsh</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -974,6 +974,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Text</key>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -1360,13 +1362,13 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.2</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.2.9</string>
+		<string>3.3.2</string>
 		<string>3.3.0</string>
-		<string>3.3.4</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -1382,7 +1384,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>580699502.67655098</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>71</integer>
+	<integer>80</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2171,7 +2173,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-07T21:20:47Z</date>
+	<date>2019-10-08T21:20:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
