@@ -4,6 +4,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# for sml
+export PATH="$PATH:/usr/local/smlnj/bin"
+
+# for golang
 export GOPATH=$HOME/repos/go
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -93,17 +97,17 @@ eval $(thefuck --alias)
 # alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
 # alias rnm='sudo service NetworkManager restart'
-alias doc='cd ~/Documents'
+alias doc='cd ~/Google\ Drive/Documents'
 alias dow='cd ~/Downloads'
 alias repo='cd ~/repos'
 alias dot='cd ~/repos/dotfiles'
-alias job='cd ~/Documents/Job'
-alias book='cd ~/Documents/Books'
-alias ci='cd ~/Documents/Job/CodeInterview'
-alias note='cd ~/Documents/Job/CodeInterview/Notes'
-alias lai='cd ~/Documents/Job/CodeInterview/Laioffer'
-alias lt='cd ~/Documents/Job/CodeInterview/Leetcode'
-alias resume='cd ~/Documents/Job/resume'
+alias job='cd ~/Google\ Drive/Documents/Job'
+alias book='cd ~/Google\ Drive/Documents/Books'
+alias ci='cd ~/Google\ Drive/Documents/Job/CodeInterview'
+alias note='cd ~/Google\ Drive/Documents/Job/CodeInterview/Notes'
+alias lai='cd ~/Google\ Drive/Documents/Job/CodeInterview/Laioffer'
+alias lt='cd ~/Google\ Drive/Documents/Job/CodeInterview/Leetcode'
+alias resume='cd ~/Google\ Drive/Documents/Job/resume'
 
 export TLDR_COLOR_BLANK="yellow"
 export TLDR_COLOR_NAME="red"

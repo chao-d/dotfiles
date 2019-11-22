@@ -13,6 +13,9 @@ export PS1="\W $ "
 # User specific aliases and functions
 export PATH=/usr/local/bin:$PATH
 
+# for SML
+export PATH="$PATH:/usr/local/smlnj/bin"
+
 # alias vim='vimx'
 # alias vi='vimx'
 
