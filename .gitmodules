@@ -3,10 +3,10 @@
 	url = https://github.com/anishathalye/dotbot
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm.git
+	url = https://github.com/tmux-plugins/tpm
 [submodule "ohmyzsh"]
 	path = ohmyzsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
+	url = https://github.com/ohmyzsh/ohmyzsh
 [submodule "vim/autoload"]
 	path = vim/autoload
-	url = https://github.com/junegunn/vim-plug.git
+	url = https://github.com/junegunn/vim-plug
