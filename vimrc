@@ -245,17 +245,27 @@ let g:ctrlp_custom_ignore = {
 
 
 " You Complete Me
-" let g:loaded_youcompleteme = 1 # uncomment this to disable ycm
-let g:jedi#completions_enabled = 0
-let g:ycm_complete_in_comments = 1
-let g:ycm_min_num_of_chars_for_completion = 2
-let g:ycm_complete_in_strings = 1
-let g:ycm_show_diagnostics_ui = 0
+let g:loaded_youcompleteme = 1 " comment this to disable ycm
+" let g:jedi#completions_enabled = 0
+" let g:ycm_complete_in_comments = 1
+" let g:ycm_min_num_of_chars_for_completion = 2
+" let g:ycm_complete_in_strings = 1
+" let g:ycm_show_diagnostics_ui = 0
+
+" ale
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+" Check Python files with flake8 and pylint.
+let b:ale_linters = ['flake8', 'pylint']
+" " Fix Python files with autopep8 and yapf.
+let b:ale_fixers = ['autopep8', 'yapf']
+" " Disable warnings about trailing whitespace for Python files.
+let b:ale_warn_about_trailing_whitespace = 0
 
 " surpress the warning
-if has('python3')
-  silent! python3 1
-endif
+" if has('python3')
+"   silent! python3 1
+" endif
 
 
 let g:neocomplcache_enable_at_startup = 0
