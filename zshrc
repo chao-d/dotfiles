@@ -10,6 +10,8 @@ export PATH="$PATH:/usr/local/smlnj/bin"
 # for golang
 export GOPATH=$HOME/repos/go
 
+export PROJECT_ID="cd-algo-vpn"
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -116,3 +118,9 @@ export TLDR_COLOR_EXAMPLE="blue"
 export TLDR_COLOR_COMMAND="white"
 export TLDR_COLOR_PARAMETER="red"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/chao/repos/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc'; fi

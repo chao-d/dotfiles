@@ -717,7 +717,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>320 321 799 448 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>108 98 1130 730 0 0 1440 877 </string>
+	<string>165 147 1130 730 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_A43D1B57-9956-453D-B871-575C66AB7384</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A43D1B57-9956-453D-B871-575C66AB7384_selection</key>
@@ -1552,15 +1552,17 @@
 	<key>NoSyncInstallationId</key>
 	<string>431DF18F-E479-412E-B447-7FB5EF95E57E</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>10</integer>
+	<integer>32</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>596142657.94150102</real>
+	<real>596493520.23066998</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -2267,6 +2269,11 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>error</string>
+		<string>playbook</string>
+	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>595969857.94125605</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -2317,7 +2324,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-20T19:11:16Z</date>
+	<date>2019-12-14T05:04:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2340,6 +2347,8 @@
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.3.7</string>
 </dict>
