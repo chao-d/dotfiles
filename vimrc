@@ -123,8 +123,12 @@ set guioptions-=r       "remove rightscroll
 
 if has("macunix")
     set guifont=Monaco:h16
+    set lines=40
+    set columns=120
 elseif has("unix")
     set guifont=Source\ Code\ Pro\ 16
+    set lines=28
+    set columns=100
 endif
 
 
@@ -142,16 +146,12 @@ set noautochdir
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("unix")
-    let s:uname = system("uname -s")
-    if s:uname == "Darwin"
-        set lines=40
-        set columns=120
-    else
-        set lines=28
-        set columns=100
-    endif
-endif
+" if has("unix")
+"     let s:uname = system("uname -s")
+"     if s:uname == "Darwin"
+"     else
+"     endif
+" endif
 
 
 set number
