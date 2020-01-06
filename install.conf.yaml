@@ -5,6 +5,11 @@
 
 - link:
     ~/.bash_profile:
+        if: '[ `uname` = Darwin ]'
+        force: true
+        path: bashrc
+    ~/.bashrc:
+        if: '[ `uname` = Linux ]'
         force: true
         path: bashrc
     ~/.zshrc:
@@ -24,6 +29,7 @@
         path: vimrc
     ~/.fonts: fonts/
     ~/Library/Application Support/Sublime Text 3/Packages/User:
+        if: '[ `uname` = Darwin ]'
         create: true
         path: sublime/User/
     # ~/.config/sublime-text-3/Packages/User:

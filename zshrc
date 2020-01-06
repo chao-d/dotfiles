@@ -93,23 +93,34 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval $(thefuck --alias)
 
-# On unix based systems, this enables copy and paste using system clipboard
-# alias vim='vimx'
-# alias vi='vimx'
-# alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
-
-# alias rnm='sudo service NetworkManager restart'
-alias doc='cd ~/Google\ Drive/Documents'
+alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
 alias repo='cd ~/repos'
 alias dot='cd ~/repos/dotfiles'
-alias job='cd ~/Google\ Drive/Documents/Job'
-alias book='cd ~/Google\ Drive/Documents/Books'
-alias ci='cd ~/Google\ Drive/Documents/Job/CodeInterview'
-alias note='cd ~/Google\ Drive/Documents/Job/CodeInterview/Notes'
-alias lai='cd ~/Google\ Drive/Documents/Job/CodeInterview/Laioffer'
-alias lt='cd ~/Google\ Drive/Documents/Job/CodeInterview/Leetcode'
-alias resume='cd ~/Google\ Drive/Documents/Job/resume'
+
+case `uname` in
+	Darwin)
+		alias doc='cd ~/Google\ Drive/Documents'
+		alias job='cd ~/Google\ Drive/Documents/Job'
+		alias book='cd ~/Google\ Drive/Documents/Books'
+		alias ci='cd ~/Google\ Drive/Documents/Job/CodeInterview'
+		alias note='cd ~/Google\ Drive/Documents/Job/CodeInterview/Notes'
+		alias lai='cd ~/Google\ Drive/Documents/Job/CodeInterview/Laioffer'
+		alias lt='cd ~/Google\ Drive/Documents/Job/CodeInterview/Leetcode'
+		alias resume='cd ~/Google\ Drive/Documents/Job/resume'
+
+		# The next line updates PATH for the Google Cloud SDK.
+		if [ -f '/Users/chao/repos/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/path.zsh.inc'; fi
+
+		# The next line enables shell command completion for gcloud.
+		if [ -f '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc'; fi
+	;;
+	Linux)
+		# On unix based systems, this enables copy and paste using system clipboard
+		# alias vim='vimx'
+		# alias vi='vimx'
+	;;
+esac
 
 export TLDR_COLOR_BLANK="yellow"
 export TLDR_COLOR_NAME="red"
@@ -118,9 +129,3 @@ export TLDR_COLOR_EXAMPLE="blue"
 export TLDR_COLOR_COMMAND="white"
 export TLDR_COLOR_PARAMETER="red"
 
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/chao/repos/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc'; fi

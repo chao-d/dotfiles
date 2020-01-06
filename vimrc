@@ -142,8 +142,17 @@ set noautochdir
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set lines=40
-set columns=120
+if has("unix")
+    let s:uname = system("uname -s")
+    if s:uname == "Darwin"
+        set lines=40
+        set columns=120
+    else
+        set lines=28
+        set columns=100
+    endif
+endif
+
 
 set number
 set relativenumber
