@@ -119,27 +119,27 @@ set guioptions-=T       "remove toolbar
 set guioptions-=m       "remove menu
 set guioptions-=r       "remove rightscroll
 
+set encoding=utf-8
 
 if has("macunix")
-    set guifont=Monaco:h16
     set lines=40
     set columns=120
+    set guifont=Monaco:h16
     colorscheme lucius
     " dash
     nmap <silent> <leader><leader>d <Plug>DashSearch
+    set cc=120
 elseif has("unix")
+    set lines=40
     if has("gui_running")
         set lines=28
         set columns=100
         set guifont=Monaco\ 14
     endif
     colorscheme lucius
+    set cc=80
 endif
 
-
-set encoding=utf-8
-
-set cc=120
 
 " no swap and backup
 set noswapfile
@@ -272,11 +272,6 @@ let b:ale_warn_about_trailing_whitespace = 0
 " Bind F8 to fixing problems with ALE
 nmap <F8> <Plug>(ale_fix)
 
-" surpress the warning
-" if has('python3')
-"   silent! python3 1
-" endif
-
 
 let g:neocomplcache_enable_at_startup = 0
 
@@ -313,7 +308,7 @@ set laststatus=2
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:Powerline_symbols='unicode'
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
 
 " enable fenced code block syntax highlighting in your markdown documents
