@@ -113,7 +113,6 @@ noremap <leader>bg :call ToggleBG()<cr>
 
 " appearance configurations
 set background=dark
-colorscheme lucius
 set t_Co=256            "use 256 colors in terminal
 set t_ut=
 set guioptions-=T       "remove toolbar
@@ -125,10 +124,16 @@ if has("macunix")
     set guifont=Monaco:h16
     set lines=40
     set columns=120
+    colorscheme lucius
+    " dash
+    nmap <silent> <leader><leader>d <Plug>DashSearch
 elseif has("unix")
-    set guifont=Source\ Code\ Pro\ 16
-    set lines=28
-    set columns=100
+    if has("gui_running")
+        set lines=28
+        set columns=100
+        set guifont=Monaco\ 14
+    endif
+    colorscheme lucius
 endif
 
 
@@ -145,13 +150,6 @@ set noautochdir
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-" if has("unix")
-"     let s:uname = system("uname -s")
-"     if s:uname == "Darwin"
-"     else
-"     endif
-" endif
 
 
 set number
@@ -315,15 +313,11 @@ set laststatus=2
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 let g:Powerline_symbols='unicode'
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 
 
 " enable fenced code block syntax highlighting in your markdown documents
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
-
-
-" dash
-nmap <silent> <leader><leader>d <Plug>DashSearch
 
 
 " vim-go

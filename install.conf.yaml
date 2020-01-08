@@ -32,9 +32,10 @@
         if: '[ `uname` = Darwin ]'
         create: true
         path: sublime/User/
-    # ~/.config/sublime-text-3/Packages/User:
-    #     create: true
-    #     path: sublime/User/
+    ~/.config/sublime-text-3/Packages/User:
+        if: '[ `uname` = Linux ]'
+        create: true
+        path: sublime/User/
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

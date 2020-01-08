@@ -117,8 +117,8 @@ case `uname` in
 	;;
 	Linux)
 		# On unix based systems, this enables copy and paste using system clipboard
-		# alias vim='vimx'
-		# alias vi='vimx'
+		alias vim='vimx'
+		alias vi='vimx'
 	;;
 esac
 
