@@ -122,21 +122,23 @@ set guioptions-=r       "remove rightscroll
 set encoding=utf-8
 
 if has("macunix")
-    set lines=40
-    set columns=120
-    set guifont=Monaco:h16
+    if has("gui_running")
+        set lines=40
+        set columns=120
+    endif
     colorscheme lucius
+    set guifont=Monaco:h16
+    set cc=120
     " dash
     nmap <silent> <leader><leader>d <Plug>DashSearch
-    set cc=120
 elseif has("unix")
     set lines=40
     if has("gui_running")
         set lines=28
         set columns=100
-        set guifont=Monaco\ 14
     endif
     colorscheme lucius
+    set guifont=Monaco\ 14
     set cc=80
 endif
 
