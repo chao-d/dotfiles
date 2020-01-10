@@ -132,7 +132,6 @@ if has("macunix")
     " dash
     nmap <silent> <leader><leader>d <Plug>DashSearch
 elseif has("unix")
-    set lines=40
     if has("gui_running")
         set lines=28
         set columns=100
