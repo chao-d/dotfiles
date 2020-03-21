@@ -4,6 +4,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# python
+alias pip=/usr/local/bin/pip3
+alias python=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+
 # for sml
 export PATH="$PATH:/usr/local/smlnj/bin"
 
@@ -59,7 +64,7 @@ export UPDATE_ZSH_DAYS=6
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pip python osx docker dnf)
+plugins=(git python osx docker dnf)
 
 source $ZSH/oh-my-zsh.sh
 
