@@ -5,9 +5,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 
 # python
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 alias pip=/usr/local/bin/pip3
-alias python=/usr/local/bin/python3
-export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+# export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 
 # for sml
 export PATH="$PATH:/usr/local/smlnj/bin"
