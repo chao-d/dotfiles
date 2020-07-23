@@ -6,8 +6,10 @@ export ZSH=$HOME/.oh-my-zsh
 
 # python
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-alias pip=/usr/local/bin/pip3
-alias python=/usr/local/bin/python3.7
+# alias pip=/usr/local/bin/pip3
+# alias python=/usr/local/bin/python3.7
+alias pip=/usr/local/opt/python@3.8/bin/pip3
+alias python=/usr/local/opt/python@3.8/bin/python3
 # export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 
 # for sml
