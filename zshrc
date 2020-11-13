@@ -15,11 +15,6 @@ alias python=/usr/local/opt/python@3.8/bin/python3
 # for sml
 export PATH="$PATH:/usr/local/smlnj/bin"
 
-# for golang
-export GOPATH=$HOME/repos/go
-
-export PROJECT_ID="cd-algo-vpn"
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -103,8 +98,8 @@ eval $(thefuck --alias)
 
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
-alias repo='cd ~/repos'
-alias dot='cd ~/repos/dotfiles'
+alias dev='cd ~/Developer'
+alias dot='cd ~/Developer/dotfiles'
 
 case `uname` in
 	Darwin)
@@ -117,11 +112,6 @@ case `uname` in
 		alias lt='cd ~/Google\ Drive/Documents/Job/CodeInterview/Leetcode'
 		alias resume='cd ~/Google\ Drive/Documents/Job/resume'
 
-		# The next line updates PATH for the Google Cloud SDK.
-		if [ -f '/Users/chao/repos/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/path.zsh.inc'; fi
-
-		# The next line enables shell command completion for gcloud.
-		if [ -f '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/chao/repos/google-cloud-sdk/completion.zsh.inc'; fi
 	;;
 	Linux)
 		# On unix based systems, this enables copy and paste using system clipboard

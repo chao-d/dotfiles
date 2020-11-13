@@ -14,9 +14,9 @@ export PATH="$PATH:/usr/local/smlnj/bin"
 # alias rnm='sudo service NetworkManager restart'
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
-alias repo='cd ~/repos'
+alias dev='cd ~/Developer'
 alias book='cd ~/Documents/Books'
-alias dot='cd ~/repos/dotfiles'
+alias dot='cd ~/Developer/dotfiles'
 alias ci='cd ~/Documents/Job/CodeInterview'
 
 export TLDR_COLOR_BLANK="yellow"
