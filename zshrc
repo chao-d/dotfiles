@@ -5,15 +5,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 
 # python
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-# alias pip=/usr/local/bin/pip3
-# alias python=/usr/local/bin/python3.7
-alias pip=/usr/local/opt/python@3.8/bin/pip3
-alias python=/usr/local/opt/python@3.8/bin/python3
+alias python=/usr/local/bin/python3.9
+alias pip=/usr/local/bin/pip3
+# alias pip=/usr/local/opt/python@3.8/bin/pip3
 # export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+export PYTHONPATH="${PYTHONPATH}:/Users/chao/Developer/aoc/"
 
-# for sml
-export PATH="$PATH:/usr/local/smlnj/bin"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
