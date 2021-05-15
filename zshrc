@@ -4,6 +4,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Homebrew path on M1 Mac
+PATH=$PATH:/opt/homebrew/bin
+
 # python
 alias python=/usr/local/bin/python3.9
 alias pip=/usr/local/bin/pip3
@@ -108,7 +111,7 @@ case `uname` in
 		alias lai='cd ~/Google\ Drive/Documents/Job/CodeInterview/Laioffer'
 		alias lt='cd ~/Google\ Drive/Documents/Job/CodeInterview/Leetcode'
 		alias resume='cd ~/Google\ Drive/Documents/Job/resume'
-
+		alias vim='/opt/homebrew/bin/vim'
 	;;
 	Linux)
 		# On unix based systems, this enables copy and paste using system clipboard
