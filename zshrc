@@ -8,12 +8,9 @@ export ZSH=$HOME/.oh-my-zsh
 # PATH=$PATH:/opt/homebrew/bin
 
 # python
-alias python=/usr/local/bin/python3.9
+alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
-# alias pip=/usr/local/opt/python@3.8/bin/pip3
 # export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-export PYTHONPATH="${PYTHONPATH}:/Users/chao/Developer/aoc/"
-
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
