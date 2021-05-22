@@ -7,7 +7,7 @@
 		"trie"
 	],
 	"auto_complete_cycle": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"detect_indentation": false,
 	"font_face": "Monaco",
 	"font_size": 16,
@@ -21,15 +21,15 @@
 	],
 	"ruler":
 	[
-		120
+		100
 	],
 	"show_encoding": true,
 	"show_line_endings": true,
-	"tab_size": 4,
+	"tab_s    ize": 4,
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"use_tab_stops": false,
 	"vintage_ctrl_keys": true,
-	"vintage_start_in_command_mode": true
+	"vintage_start_in_command_mode": true,
 }

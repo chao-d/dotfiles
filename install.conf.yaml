@@ -28,11 +28,11 @@
         force: true
         path: vimrc
     ~/.fonts: fonts/
-    ~/Library/Application Support/Sublime Text 3/Packages/User:
+    ~/Library/Application Support/Sublime Text/Packages/User:
         if: '[ `uname` = Darwin ]'
         create: true
         path: sublime/User/
-    ~/.config/sublime-text-3/Packages/User:
+    ~/.config/sublime-text/Packages/User:
         if: '[ `uname` = Linux ]'
         create: true
         path: sublime/User/
