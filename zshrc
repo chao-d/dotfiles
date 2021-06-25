@@ -104,6 +104,7 @@ alias dot='cd ~/Developer/dotfiles'
 case `uname` in
 	Darwin)
 		alias doc='cd ~/Google\ Drive/Documents'
+        alias dow='cd ~/Google\ Drive/Downloads'
 		alias job='cd ~/Google\ Drive/Documents/Job'
 		alias book='cd ~/Google\ Drive/Documents/Books'
 		alias ci='cd ~/Google\ Drive/Documents/Job/CodeInterview'
