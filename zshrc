@@ -103,15 +103,9 @@ alias dot='cd ~/Developer/dotfiles'
 
 case `uname` in
 	Darwin)
-		alias doc='cd ~/Google\ Drive/Documents'
-        alias dow='cd ~/Google\ Drive/Downloads'
-		alias job='cd ~/Google\ Drive/Documents/Job'
-		alias book='cd ~/Google\ Drive/Documents/Books'
-		alias ci='cd ~/Google\ Drive/Documents/Job/CodeInterview'
-		alias note='cd ~/Google\ Drive/Documents/Job/CodeInterview/Notes'
-		alias lai='cd ~/Google\ Drive/Documents/Job/CodeInterview/Laioffer'
-		alias lt='cd ~/Google\ Drive/Documents/Job/CodeInterview/Leetcode'
-		alias resume='cd ~/Google\ Drive/Documents/Job/resume'
+		alias doc='cd /Volumes/GoogleDrive/My\ Drive/Documents'
+        alias dow='cd /Volumes/GoogleDrive/My\ Drive/Downloads'
+		alias book='cd /Volumes/GoogleDrive/My\ Drive/Documents/Books'
 		# alias vim='/opt/homebrew/bin/vim'
 	;;
 	Linux)
