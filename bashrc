@@ -15,9 +15,7 @@ export PATH="$PATH:/usr/local/smlnj/bin"
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
 alias dev='cd ~/Developer'
-alias book='cd ~/Documents/Books'
 alias dot='cd ~/Developer/dotfiles'
-alias ci='cd ~/Documents/Job/CodeInterview'
 
 export TLDR_COLOR_BLANK="yellow"
 export TLDR_COLOR_NAME="red"

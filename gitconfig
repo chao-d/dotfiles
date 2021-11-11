@@ -1,6 +1,6 @@
 [user]
-	name = Chao Duan
-	email = chao0duan@gmail.com
+    name = Chao Duan
+    email = chao0duan@gmail.com
 
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -28,9 +28,9 @@
 
 [core]
     editor = vim
-	excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore_global
 
 [credential]
     helper = cache --timeout=999999999
 [pull]
-	rebase = true
+    rebase = true

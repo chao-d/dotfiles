@@ -62,7 +62,7 @@ export UPDATE_ZSH_DAYS=6
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python osx docker dnf)
+plugins=(git python osx mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
