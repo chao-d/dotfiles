@@ -7,8 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Homebrew path on M1 Mac
 # PATH=$PATH:/opt/homebrew/bin
 
-# For Flutter
-export PATH="$PATH:$HOME/Developer/flutter/flutter_sdk/bin"
+alias cht=/usr/local/bin/cht.sh
 
 # python
 alias python=/usr/local/bin/python3
@@ -92,8 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 eval $(thefuck --alias)
 
 alias doc='cd ~/Documents'
