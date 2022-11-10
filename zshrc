@@ -101,7 +101,7 @@ case `uname` in
 		# alias doc='cd /Volumes/GoogleDrive/My\ Drive/Documents'
         # alias dow='cd /Volumes/GoogleDrive/My\ Drive/Downloads'
 		# alias book='cd /Volumes/GoogleDrive/My\ Drive/Documents/Books'
-		# alias vim='/opt/homebrew/bin/vim'
+		alias vim='mvim -v'
 	;;
 	Linux)
 		# On unix based systems, this enables copy and paste using system clipboard
