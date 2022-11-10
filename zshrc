@@ -90,8 +90,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-eval $(thefuck --alias)
 
 alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
