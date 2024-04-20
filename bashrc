@@ -23,3 +23,11 @@ export TLDR_COLOR_DESCRIPTION="green"
 export TLDR_COLOR_EXAMPLE="blue"
 export TLDR_COLOR_COMMAND="white"
 export TLDR_COLOR_PARAMETER="red"
+
+# >>> coursier install directory >>>
+export PATH="$PATH:/Users/chao/Library/Application Support/Coursier/bin"
+# <<< coursier install directory <<<
+
+# >>> JVM installed by coursier >>>
+export JAVA_HOME="/Users/chao/Library/Caches/Coursier/arc/https/github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11%252B28/OpenJDK11-jdk_x64_mac_hotspot_11_28.tar.gz/jdk-11+28/Contents/Home"
+# <<< JVM installed by coursier <<<
