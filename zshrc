@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -13,6 +14,9 @@ alias cht=/usr/local/bin/cht.sh
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 # export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+
+# emacs
+alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -119,7 +123,7 @@ export TLDR_COLOR_EXAMPLE="blue"
 export TLDR_COLOR_COMMAND="white"
 export TLDR_COLOR_PARAMETER="red"
 
-
-
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+export GPG_TTY=$(tty)

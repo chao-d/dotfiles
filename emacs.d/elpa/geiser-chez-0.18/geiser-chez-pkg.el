@@ -1,0 +1,2 @@
+;; Generated package description from geiser-chez.el  -*- no-byte-compile: t -*-
+(define-package "geiser-chez" "0.18" "Chez and Geiser talk to each other" '((emacs "26.1") (geiser "0.19")) :commit "988d9f7e24b8634755cdb7b110e3e399bdb55df3" :authors '(("Peter" . "craven@gmx.net")) :maintainer '("Jose A Ortega Ruiz" . "jao@gnu.org") :keywords '("languages" "chez" "scheme" "geiser") :url "https://gitlab.com/emacs-geiser/chez")

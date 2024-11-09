@@ -1,6 +1,8 @@
 [user]
     name = Chao Duan
     email = chao@acmes.io
+	signingke = 69F6A93EB3994B0F
+	signingkey = 1F2B856F917D19E1267E1DBE69F6A93EB3994B0F
 
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -34,3 +36,7 @@
     helper = cache --timeout=999999999
 [pull]
     rebase = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg

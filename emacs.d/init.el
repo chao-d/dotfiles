@@ -14,9 +14,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (misterioso)))
- '(font-lock-global-modes (quote (not speedbar-mode)))
- '(package-selected-packages (quote (sml-mode))))
+ '(custom-enabled-themes '(misterioso))
+ '(font-lock-global-modes '(not speedbar-mode))
+ '(package-selected-packages '(paredit geiser-chez geiser sml-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -39,7 +39,7 @@
 (setq require-final-newline nil)
 
 ;; Lines, columns and other things
-(global-linum-mode 1)
+(display-line-numbers-mode 1)
 (column-number-mode 1)
 (show-paren-mode 1)
 (size-indication-mode 1)
@@ -49,3 +49,9 @@
 (setq-default fill-column 120)
 (setq ns-use-native-fullscreen nil)
 (setq-default show-trailing-whitespace t)
+
+
+(require 'geiser)
+(setq geiser-active-implementations '(chez))
+; (setq scheme-program-name "/usr/local/bin/chez")
+(setq geiser-chez-binary "/usr/local/bin/chez")
