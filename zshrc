@@ -123,7 +123,5 @@ export TLDR_COLOR_EXAMPLE="blue"
 export TLDR_COLOR_COMMAND="white"
 export TLDR_COLOR_PARAMETER="red"
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
 export GPG_TTY=$(tty)
+
